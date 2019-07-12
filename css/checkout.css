@@ -1,0 +1,131 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat';
+    max-width: 100%;
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav {
+    background-color: white;
+    overflow: auto;
+    padding: 10px 10px 20px 10px;
+    margin:10 10 10 10;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.primary-nav {
+    float: left;
+    font-size: 20px;
+}
+
+.primary-nav>a {
+    letter-spacing: 5px;
+}
+
+.primary-nav>img {
+    width: 30px;
+}
+
+.secondary-nav>a {
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, .6);
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.secondary-nav {
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+nav>ul>li>a {
+    color: black;
+    font-family: helvetica;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+    color: #CB4335;
+}
+section>h1{
+    font-size: 60px;
+    margin: 20px 0 0 35px;
+}
+.row{
+    display: flex;
+    margin: 0 60px 0 60px;
+}
+.row>.column{
+    width: 70%
+}
+.row>.column2{
+    width: 30%
+}
+.cart-item{
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img{
+    width:10%;
+}
+input{
+    font-weight: bold;
+    text-align: center;
+    background: rgb(36, 35, 35);
+    color: white;
+    font-size: 20px;
+    height: 25px;
+    margin :16px 0;
+    border: 0px;
+    
+    border-radius: 4px;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30%;
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.buttons>a{
+    text-decoration: none;
+}
+.button-checkout{
+    border: 1px solid black;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
+}
+.cancel{
+    color: black;
+}
+.button-checkout:hover{
+    color: black;
+    background-color: white;
+}

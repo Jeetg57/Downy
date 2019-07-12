@@ -1,0 +1,191 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat';
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('Images/img-Nike5.jpeg');
+    height: 100%;
+}
+
+.pxtext {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+.border {
+    color: white;
+    margin: 0;
+    font-size: 20vh;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .6);
+    letter-spacing: 1px;
+}
+
+.border>p {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .6);
+}
+
+.slogan {
+    color: white;
+    font-size: 30px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .6);
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1;
+    background-color: white;
+    overflow: auto;
+    padding: 10px 10px 20px 10px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .6);
+}
+
+
+
+.primary-nav {
+    float: left;
+    font-size: 20px;
+}
+
+.primary-nav>a {
+    letter-spacing: 5px;
+}
+
+.primary-nav>img {
+    width: 30px;
+}
+
+.secondary-nav>a {
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, .6);
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.secondary-nav {
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+nav>ul>li>a {
+    color: black;
+    font-family: helvetica;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+    color: #CB4335;
+}
+
+.pxtext>p>a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+section>h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+section>p {
+    margin: 0 10% 0 10%;
+}
+
+section>.intro-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section>.intro-img>img {
+    width: 30%;
+    margin: 10px;
+}
+
+#about-us {
+    background-color: #FADBD8;
+    padding-bottom: 40px;
+    padding-top: 0px;
+}
+
+section>p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+section>p>a {
+    text-decoration: none;
+    font-size: 20px;
+    border: 1.5px solid #27e3ac;
+    border-radius: 5px;
+    padding: 8px;
+    color: #27e3ac;
+}
+
+section>p>a:hover {
+    background-color: #27e3ac;
+    color: #fff;
+}
+#foot{
+    background-color: #1a1a1a;
+    padding-bottom: 20px;
+}
+#foot>.row {
+    display: flex;
+    color: white;
+    margin: 0 auto;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.column {
+    flex: 50%;
+    margin-left: 20px;
+}
+.column>p{
+    margin:5px;
+}
+.column>p>a{
+    color: white;
+    text-decoration: none;  
+}
+.column>p>a:hover{
+    color: #27e3ac;
+}
+
+@media(max-width:600px) {
+    section>.intro-img {
+        flex-direction: column;
+    }
+    section>.intro-img>img {
+        width: 100%;
+        margin: 5px;
+    }
+    header {
+        background-position: center;
+    }
+}
