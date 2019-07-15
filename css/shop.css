@@ -6,23 +6,27 @@ body, html {
 }
 
 .card {
-  max-width: 300px;
-  margin:15px;
+    max-width: 300px;
+    margin: 15px;
 }
-.card>h3{
-    margin:0;
+
+.card>h3 {
+    margin: 0;
     padding: 0;
 }
-.card>p{
-    margin:0;
+
+.card>p {
+    margin: 0;
     padding: 5px;
-    font-size:15px;
+    font-size: 15px;
 }
+
 .price {
-  color: grey;
-  font-size: 20px;
+    color: grey;
+    font-size: 20px;
 }
-.items{
+
+.items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -83,7 +87,7 @@ nav>ul>li>a:hover {
 }
 
 .card a {
-    padding:6px 15px 6px 15px;
+    padding: 6px 15px 6px 15px;
     color: white;
     background-color: #000;
     cursor: pointer;
@@ -91,22 +95,25 @@ nav>ul>li>a:hover {
     font-size: 16px;
     border-radius: 16px;
     text-decoration: none;
-    
-  }
-  .card a:hover {
+}
+
+.card a:hover {
     background-color: white;
     color: #000;
     border: 1px solid black;
-  }
-section>h2, section>h1, section>p{
-    margin:0 0 0 35px;
 }
-section>h1{
+
+section>h2, section>h1, section>p {
+    margin: 0 0 0 35px;
+}
+
+section>h1 {
     font-size: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.card>img{
-    height:200px;
+
+.card>img {
+    height: 200px;
     object-fit: cover;
 }
