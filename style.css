@@ -199,3 +199,35 @@ section p {
     padding: 0 0 1em 0;
     text-align: justify;
 }
+
+.foot {
+    margin: 0 10% 0 10%;
+}
+
+footer {
+    background-color: #1b212b;
+    color: white;
+}
+
+.col>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.col>ul>li {
+    list-style-type: none;
+}
+
+.col>ul>li>a:hover {
+    color: brown;
+}
+
+.col>ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
