@@ -5,8 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>About Me</title>
+    <link rel="stylesheet" href="../css/about-me.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <style>
+    body {
+      margin: 0% 20%;
+      height: 100%;
+      font-family: "Montserrat";
+    }
+
+    input,
+    label {
+      display: block;
+      width: 100%;
+    }
+    label {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    textarea {
+      max-width: 100%;
+      width: 100%;
+      height: 100px;
+    }
+    form {
+      padding: 30px;
+      box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.6);
+    }
+    input {
+      height: 25px;
+      padding: 2px;
+      margin-bottom: 10px;
+    }
+  </style>
   <body>
-    <section></section>
+    <section>
+      <h1>About Me</h1>
+      <p>
+        An undergrad student who is extremely passionate in web and app
+        development. I work with CSS, HTML, JavaScript, PHP, and mySQL to create
+        beautiful, functional web pages for my clients. As well as making
+        websites, I enjoy playing video games, making apps for mobile and
+        talking to friends.
+      </p>
+      <section>
+        <h1>Contact Me</h1>
+        <p>
+          Items marked as "<strong style="font-size: 20px"> * </strong>" are
+          required
+        </p>
+        <form action="">
+          <label for="Name"
+            >Full Name*
+            <input type="text" name="" id="" placeholder="Name" required
+          /></label>
+          <label for="Email"
+            >Email*
+            <input type="email" name="" id="" placeholder="Email" required
+          /></label>
+
+          <label for="Phone"
+            >Phone <input type="tel" name="" id="" placeholder="Phone Number" />
+          </label>
+          <label for="Message"
+            >Message*<textarea
+              name="Message"
+              id=""
+              placeholder="Your Message"
+              required
+            ></textarea
+          ></label>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </section>
   </body>
 </html>
