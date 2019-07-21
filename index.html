@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Downy Shoes</title>
-    <link rel="shortcut icon" type="image/x-icon" href="Images/img-DS.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images/img-DS.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
   </head>
@@ -24,11 +24,11 @@
       <nav>
         <ul>
           <li class="primary-nav">
-            <img src="Images/img-DS.jpg" alt="logo" />
+            <img src="Images/img-DS.png" alt="logo" />
             <a href="#home">DOWNY SHOES</a>
           </li>
           <li class="secondary-nav"><a href="#about-us">ABOUT</a></li>
-          <li class="secondary-nav"><a href="#home">SEARCH</a></li>
+          <li class="secondary-nav"><a href="HTML/checkout.html">CART</a></li>
           <li class="secondary-nav"><a href="HTML/shop.html">SHOP ALL</a></li>
           <li class="secondary-nav"><a href="HTML/women.html">WOMEN</a></li>
           <li class="secondary-nav"><a href="HTML/men.html">MEN</a></li>
@@ -85,6 +85,34 @@
         </div>
       </div>
     </section>
+    <section class="preview" style="margin: 0 5%">
+      <h1>Best Sellers</h1>
+      <div class="row">
+        <div class="item">
+          <img src="./Images/img-Nike1.jpg" alt="" width="100%" />
+        </div>
+        <div class="item">
+          <img src="./Images/img-Nike2.jpg" alt="" width="100%" />
+        </div>
+        <div class="item">
+          <img src="./Images/img-Nike3.jpg" alt="" width="100%" />
+        </div>
+        <div class="item">
+          <img src="./Images/img-Nike4.jpg" alt="" width="100%" />
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <video
+        src="./Images/videoplayback.mp4"
+        type="video/mp4"
+        controls
+        controlsList="nodownload"
+        poster="./Images/nike-zoom.gif"
+        style="display:block; margin:30px auto; width: 70%"
+      ></video>
+    </section>
+
     <section id="about-us">
       <h1>About Us</h1>
       <p>
@@ -98,21 +126,13 @@
         Based in Kenya, Nairobi.
       </p>
     </section>
-    <section class="video">
-      <video
-        src="./Images/videoplayback.mp4"
-        type="video/mp4"
-        controls
-        controlsList="nodownload"
-        poster="./Images/nike-zoom.gif"
-        style="display:block; margin:30px auto; width: 70%"
-      ></video>
-    </section>
     <footer>
       <div class="row foot">
         <div class="col">
           <h1>Downy Shoes</h1>
-          <p>Official Nike Partner</p>
+          <p>
+            Official <a href="https://www.nike.com/xf/en_gb/">Nike</a> Partner
+          </p>
         </div>
         <div class="col">
           <h2>Links</h2>
@@ -136,6 +156,30 @@
           </h2>
         </div>
       </div>
+    </footer>
+    <footer id="footer-social">
+      <ul class="row foot-icons" style="list-style-type: none;">
+        <li>
+          <a href="https://twitter.com/JeetGohil_" target="_blank">
+            <i class="fab fa-twitter fa-3x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/MarioJT99" target="_blank">
+            <i class="fab fa-facebook fa-3x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.codepen.io/jeetg57" target="_blank">
+            <i class="fab fa-codepen fa-3x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Jeetg57" target="_blank">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

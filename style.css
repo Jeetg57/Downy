@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
   font-family: "Montserrat";
@@ -18,9 +17,10 @@ header {
   width: 100%;
   height: 80%;
 }
+
 @media (max-width: 600px) {
   header {
-    background-image: url("Images/nike-bg-3.jpg");
+    background-image: url("Images/nike-bg-5.gif");
     background-attachment: scroll;
   }
 }
@@ -39,24 +39,15 @@ header {
   font-size: 10vh;
   font-family: "Montserrat";
   font-weight: 700;
-  text-shadow: 0px 1px 2px whitesmoke;
   letter-spacing: 1px;
   color: black;
 }
 
-.border > p {
+.border>p {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.slogan {
-  color: white;
-  font-size: 30px;
-  font-family: Helvetica;
-  font-weight: bold;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
@@ -67,7 +58,7 @@ nav {
   z-index: 1;
   background-color: white;
   overflow: auto;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 30px 20px 10px;
 }
 
 .primary-nav {
@@ -75,19 +66,20 @@ nav {
   font-size: 20px;
 }
 
-.primary-nav > a {
+.primary-nav>a {
   letter-spacing: 5px;
 }
 
-.primary-nav > img {
+.primary-nav>img {
   width: 30px;
 }
 
-.secondary-nav > a {
+.secondary-nav>a {
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.6);
   font-size: 15px;
   letter-spacing: 3px;
+  padding-right: 20px;
 }
 
 .secondary-nav {
@@ -97,18 +89,18 @@ nav {
   font-size: 20px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   color: black;
   font-family: helvetica;
   text-decoration: none;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: #cb4335;
+  transition: .7s;
 }
 
-.pxtext > p > a {
-  border: 1px solid black;
+.pxtext>p>a {
   background-color: black;
   text-align: center;
   color: white;
@@ -116,11 +108,15 @@ nav > ul > li > a:hover {
   padding: 10px 10px 10px 10px;
   margin-bottom: 10px;
   text-decoration: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  transition: .5s;
 }
 
-.pxtext > p > a:hover {
-  background-color: whitesmoke;
-  color: black;
+.pxtext>p>a:hover {
+  background-color: #cb4335;
+  box-shadow: 1px 1px 5px rgba(203, 67, 53, 0.6);
+  font-size: 20px;
+  transition: .5s;
 }
 
 .row {
@@ -136,6 +132,8 @@ nav > ul > li > a:hover {
 .overlay-image {
   position: relative;
   width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 7px;
 }
 
 /* Original image */
@@ -217,20 +215,20 @@ footer {
   color: white;
 }
 
-.col > ul > li > a {
+.col>ul>li>a {
   color: white;
   text-decoration: none;
 }
 
-.col > ul > li {
+.col>ul>li {
   list-style-type: none;
 }
 
-.col > ul > li > a:hover {
+.col>ul>li>a:hover {
   color: brown;
 }
 
-.col > ul {
+.col>ul {
   margin: 0;
   padding: 0;
 }
@@ -239,9 +237,40 @@ a {
   color: cadetblue;
   text-decoration: none;
 }
+
 video {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
+
 video:focus {
   outline: none;
+}
+
+#footer-social {
+  margin: 0;
+  padding: 0;
+}
+
+.foot-icons {
+  margin: 0 30% 0 30%;
+}
+
+.foot-icons>li {
+  margin: 10px auto;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.foot-icons>li>a>i {
+  color: white;
+  transition: .2s;
+  transition-timing-function: initial;
+}
+
+.foot-icons>li>a>i:hover {
+  color: #38A1F3;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  font-size: 70px;
+  transition: .2s;
 }
