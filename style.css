@@ -97,7 +97,7 @@ nav>ul>li>a {
 
 nav>ul>li>a:hover {
   color: #cb4335;
-  transition: .7s;
+  transition: .7s ease;
 }
 
 .pxtext>p>a {
@@ -109,7 +109,7 @@ nav>ul>li>a:hover {
   margin-bottom: 10px;
   text-decoration: none;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-  transition: .5s;
+  transition: .5s ease;
 }
 
 .pxtext>p>a:hover {
@@ -264,7 +264,7 @@ video:focus {
 
 .foot-icons>li>a>i {
   color: white;
-  transition: .2s;
+  transition: .2s ease;
   transition-timing-function: initial;
 }
 
