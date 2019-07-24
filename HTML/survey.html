@@ -9,9 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/navbar.css">
   </head>
   <style>
-    body {
+    section {
       margin: 0% 20%;
       height: 100%;
       font-family: "Montserrat";
@@ -39,11 +40,36 @@
         padding: 2px;
         margin-bottom: 10px;
     }
-
+    nav{
+      position: relative;
+    }
   </style>
   <body>
+      <nav>
+          <ul>
+            <li class="primary-nav">
+              <img src="../Images/img-DS.png" alt="logo" />
+              <a href="../index.html">DOWNY SHOES</a>
+            </li>
+            <li class="secondary-nav">
+              <a href="../HTML/checkout.html">
+                <i class="fas fa-shopping-cart"></i> CART
+              </a>
+            </li>
+            <li class="secondary-nav"><a href="../HTML/shop.html">SHOP ALL</a></li>
+            <li class="secondary-nav"><a href="../HTML/women.html">WOMEN</a></li>
+            <li class="secondary-nav"><a href="../HTML/men.html">MEN</a></li>
+            <li class="secondary-nav">
+              <a href="../HTML/about-us.html">ABOUT US</a>
+            </li>
+          </ul>
+        </nav>
+    <section>
     <h1>Feedback Form</h1>
     <form action="">
+      <span> <img src="../Images/img-DS.png" alt="Downy logo" height="50px">
+      DOWNY SHOES</span> <hr>
+      <br>
       <label for="fname"
         >First Name
         <input type="text" placeholder="Name" required />
@@ -57,11 +83,11 @@
       /></label>
       <br>
       <label for="UserFriendly"
-        >User Friendliness = <span id="range-num"></span> <span>%</span><br>
+        >User Friendliness of the website = <span id="range-num"></span> <span>%</span><br>
         <input type="range" name="" id="myRange" min="0" max="100" step="1" value="8" />
       </label>
       <br>
-      <label for="q1">Did you find what you were looking for? <span style="font-weight:initial"><input type="radio" name="q1" id="" value="yes"> Yes
+      <label for="q1">Did you find what you were looking for in the website? <span style="font-weight:initial"><input type="radio" name="q1" id="" value="yes"> Yes
       <input type="radio" name="q1" id="">No</span></label>
       <br>
       <label for="suggestion"
@@ -71,8 +97,10 @@
             placeholder="Suggestions"
         ></textarea
       ></label>
-      <button type="submit">Submit</button>
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
+  </section>
     <script>
       //Script for displaying slider value
       var slider = document.getElementById("myRange");

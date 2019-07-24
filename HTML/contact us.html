@@ -9,9 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
   <style>
-    body {
+    section {
       margin: 0% 20%;
       height: 100%;
       font-family: "Montserrat";
@@ -40,11 +41,39 @@
       padding: 2px;
       margin-bottom: 10px;
     }
+    nav {
+      position: relative;
+    }
   </style>
   <body>
+    <nav>
+      <ul>
+        <li class="primary-nav">
+          <img src="../Images/img-DS.png" alt="logo" />
+          <a href="../index.html">DOWNY SHOES</a>
+        </li>
+        <li class="secondary-nav">
+          <a href="../HTML/checkout.html">
+            <i class="fas fa-shopping-cart"></i> CART
+          </a>
+        </li>
+        <li class="secondary-nav"><a href="../HTML/shop.html">SHOP ALL</a></li>
+        <li class="secondary-nav"><a href="../HTML/women.html">WOMEN</a></li>
+        <li class="secondary-nav"><a href="../HTML/men.html">MEN</a></li>
+        <li class="secondary-nav">
+          <a href="../HTML/about-us.html">ABOUT US</a>
+        </li>
+      </ul>
+    </nav>
     <section>
       <h1>Contact Form</h1>
       <form action="">
+        <span>
+          <img src="../Images/img-DS.png" alt="Downy logo" height="50px" />
+          DOWNY SHOES</span
+        >
+        <hr />
+        <br />
         <label for="Name"
           >Full Name
           <input type="text" name="" id="" placeholder="Name" required
@@ -62,6 +91,7 @@
           ></textarea
         ></label>
         <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
     </section>
   </body>
