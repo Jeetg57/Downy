@@ -219,5 +219,22 @@ video:focus {
   color: #38A1F3;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
   font-size: 70px;
-  transition: .2s;
+  transition: .2s ease-out;
+}
+
+figcaption {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.item>a>img {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 7px;
+}
+
+.item:hover {
+  filter: brightness(50%);
+  transition: .5s ease;
 }

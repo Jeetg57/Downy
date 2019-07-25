@@ -8,10 +8,60 @@
     <title>About Us</title>
     <link rel="stylesheet" href="../css/navbar.css" />
     <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <style>
+    body {
+      overflow: hidden;
+      background: #ee9ca7; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #ffdde1,
+        #ee9ca7
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #ffdde1,
+        #ee9ca7
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .mapouter {
+      position: relative;
+      text-align: right;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100%;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 0 10%;
+    }
+    .col {
+      width: 50%;
+      margin: 0 10px 0 10px;
+    }
+    h1 {
+      text-align: center;
+    }
+    #about-us,
+    h1 {
+      font-family: "Montserrat";
+    }
+    nav {
+      position: relative;
+      background: transparent;
+    }
+    p {
+      text-align: justify;
+    }
+  </style>
   <body>
     <nav>
       <ul>
@@ -32,27 +82,44 @@
         </li>
       </ul>
     </nav>
-    <section id="about-us">
-      <img src="../images/img-Nike2.jpg" width="100%" height="20%" />
-      <h1>About Us</h1>
-      <p>
-        We are located in Nairobi, Kenya along Moi Avenue. Being an official
-        Nike partner, we sell their shoes at convenient prices. We focus on
-        team-designed collaborations that appeal to our global community of
-        global independents, creatives, and free-thinkers. We create shoes to
-        reflect the unbound lives we live and don't stop until we get it right.
-      </p>
-      <h2>Mission</h2>
-      <p>
-        Our mission is what drives us to do everything possible to expand human
-        potential. We do that by creating groundbreaking sport innovations, by
-        making our products more sustainably, by building a creative and diverse
-        global team and by making a positive impact in communities where we live
-        and work. We strive to keep our work unique and smart, with room for a
-        little magic. You can find us in Nairobi, CBD, and if the project is the
-        right fit, we’d love to work with you. Feel free to drop us a line,
-        here.
-      </p>
-    </section>
+    <h1>About Downy</h1>
+    <div class="row">
+      <section class="mapouter col">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="500vw"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=moi%20avenue&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="about-us" class="col">
+        <p>
+          We are located in Nairobi, Kenya along Moi Avenue. <br />Being an
+          official Nike partner, we sell their shoes at convenient prices. We
+          focus on team-designed collaborations that appeal to our global
+          community of global independents, creatives, and free-thinkers. We
+          create shoes to reflect the unbound lives we live and don't stop until
+          we get it right.
+        </p>
+        <h2>Mission</h2>
+        <p>
+          Our mission is what drives us to do everything possible to expand
+          human potential. We do that by creating groundbreaking sport
+          innovations, by making our products more sustainably, by building a
+          creative and diverse global team and by making a positive impact in
+          communities where we live and work. We strive to keep our work unique
+          and smart, with room for a little magic. You can find us in Nairobi,
+          CBD, and if the project is the right fit, we’d love to work with you.
+          Feel free to drop us a line, here.
+        </p>
+      </section>
+    </div>
   </body>
 </html>
