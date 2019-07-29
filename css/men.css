@@ -4,12 +4,15 @@ html {
   max-width: 100%;
   font-family: "Montserrat";
   background-color: whitesmoke;
+  overflow-x: hidden;
 }
+
 nav {
   position: relative !important;
   overflow: auto;
   background-color: whitesmoke !important;
 }
+
 .items {
   margin: 0 10% 0 10%;
 }
@@ -53,12 +56,12 @@ img {
   margin: 15px;
 }
 
-.card > h3 {
+.card>h3 {
   margin: 0;
   padding: 0;
 }
 
-.card > p {
+.card>p {
   margin: 0;
   padding: 5px;
   font-size: 15px;
@@ -93,7 +96,7 @@ img {
   border: 1px solid black;
 }
 
-.card > img {
+.card>img {
   height: 200px;
   object-fit: cover;
 }
