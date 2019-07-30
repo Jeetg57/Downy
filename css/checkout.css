@@ -78,7 +78,7 @@ section>h1 {
 }
 
 .cart-item {
-    margin: 0 0 50px 0;
+    margin: 0 0 10px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -139,4 +139,14 @@ input {
 .button-checkout:hover {
     color: black;
     background-color: white;
+}
+
+.remove {
+    background: none;
+    border: none;
+    height: auto;
+}
+
+.remove:hover {
+    color: #CB4335;
 }

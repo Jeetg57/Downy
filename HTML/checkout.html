@@ -20,6 +20,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="../js/preloader.js"></script>
+    <script src="../js/deleteItems.js"></script>
   </head>
 
   <body>
@@ -36,9 +37,6 @@
               <i class="fas fa-shopping-cart"></i> CART
             </a>
           </li>
-          <li class="secondary-nav">
-            <a href="../HTML/shop.html">SHOP ALL</a>
-          </li>
           <li class="secondary-nav"><a href="../HTML/women.html">WOMEN</a></li>
           <li class="secondary-nav"><a href="../HTML/men.html">MEN</a></li>
           <li class="secondary-nav">
@@ -53,8 +51,42 @@
         <div class="column">
           <h1>Your Order</h1>
           <h5>Please select the quantity below</h5>
-          <div class="cart-item">
+          <div class="cart-item" id="item">
             <img src="../Images/img-Nike1.jpg" alt="" />
+            <p>Nike Air Max (Red)</p>
+            <p>$399.90</p>
+            <input
+              type="number"
+              name="quantity"
+              id="no-of-items"
+              value="1"
+              min="1"
+              max="6"
+              step="1"
+            />
+            <button id="remove" class="remove">
+              <i class="fas fa-trash fa-2x"></i>
+            </button>
+          </div>
+          <div class="cart-item" id="item1">
+            <img src="../Images/img-Nike4.jpg" alt="" />
+            <p>Nike Air Max (Pink)</p>
+            <p>$299.90</p>
+            <input
+              type="number"
+              name="quantity"
+              id="no-of-items"
+              value="1"
+              min="1"
+              max="6"
+              step="1"
+            />
+            <button id="remove2" class="remove">
+              <i class="fas fa-trash fa-2x"></i>
+            </button>
+          </div>
+          <div class="cart-item" id="item2">
+            <img src="../Images/img-Nike3.jpg" alt="" />
             <p>Nike Air Max (Blue)</p>
             <p>$199.90</p>
             <input
@@ -66,7 +98,9 @@
               max="6"
               step="1"
             />
-            <p>Remove</p>
+            <button id="remove3" class="remove">
+              <i class="fas fa-trash fa-2x"></i>
+            </button>
           </div>
           <hr />
         </div>
