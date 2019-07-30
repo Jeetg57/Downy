@@ -1,12 +1,30 @@
 $(function() {
   $("#remove").click(function() {
-    $("#item").hide();
+    var confirm = window.confirm("Are you sure you want to delete this item?");
+    if (confirm == true) {
+      $("#item").hide();
+      alert("Item deleted!");
+    } else {
+      alert("Item not deleted");
+    }
   });
   $("#remove2").click(function() {
-    $("#item1").hide();
+    var confirm = window.confirm("Are you sure you want to delete this item?");
+    if (confirm == true) {
+      $("#item1").hide();
+      alert("Item deleted!");
+    } else {
+      alert("Item not deleted");
+    }
   });
   $("#remove3").click(function() {
-    $("#item2").hide();
+    var confirm = window.confirm("Are you sure you want to delete this item?");
+    if (confirm == true) {
+      $("#item2").hide();
+      alert("Item deleted!");
+    } else {
+      alert("Item not deleted");
+    }
     $("hr").hide();
   });
 
