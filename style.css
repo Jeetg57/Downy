@@ -185,15 +185,6 @@ a {
   text-decoration: none;
 }
 
-video {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-}
-
-video:focus {
-  outline: none;
-}
-
 #footer-social {
   margin: 0;
   padding: 0;

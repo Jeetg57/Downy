@@ -23,7 +23,8 @@
   </head>
   <style>
     body {
-      overflow: hidden;
+      overflow-x: hidden;
+      font-family: "Montserrat";
     }
 
     .mapouter {
@@ -41,11 +42,11 @@
     .row {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       margin: 0 10%;
     }
     .col {
-      width: 50%;
+      width: 45%;
       margin: 0 10px 0 10px;
     }
     h1 {
@@ -61,6 +62,13 @@
     }
     p {
       text-align: justify;
+    }
+    figure > img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+      border-radius: 7px;
     }
   </style>
   <body>
@@ -83,7 +91,7 @@
         </li>
       </ul>
     </nav>
-    <h1>About Downy</h1>
+    <h1>About Downy Shoes</h1>
     <div class="row">
       <section class="mapouter col">
         <div class="gmap_canvas">
@@ -101,6 +109,12 @@
       </section>
 
       <section id="about-us" class="col">
+        <p>
+          Downy Shoes was started back in 2007 by
+          <strong>John Matthews</strong>, The team started producing shoes only
+          in 2009. In addition to female and male, there is a children's line.
+          Shoes of non-dull styles and rich colors immediately catch the eye.
+        </p>
         <p>
           We are located in Nairobi, Kenya along Moi Avenue. <br />Being an
           official Nike partner, we sell their shoes at convenient prices. We
@@ -122,5 +136,40 @@
         </p>
       </section>
     </div>
+    <section>
+      <h1>Our Team</h1>
+      <div class="row">
+        <figure>
+          <img src="../Images/team-img-1.jpg" alt="" />
+          <figcaption>
+            <h3>John Matthews</h3>
+            <p>
+              C.E.O of Downy Shoes ltd.
+            </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="../Images/team-img-2.jpg" alt="" />
+          <figcaption>
+            <h3>Natalie Matthews</h3>
+            <p>Lead Salesman</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="../Images/team-img-3.jpg" alt="" />
+          <figcaption>
+            <h3>Jack Courage</h3>
+            <p>Lead Developer</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="../Images/team-img-4.jpg" alt="" />
+          <figcaption>
+            <h3>Matt Murdock</h3>
+            <p>Marketing Lead</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
   </body>
 </html>

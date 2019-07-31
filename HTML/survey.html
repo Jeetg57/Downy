@@ -20,35 +20,14 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="../js/preloader.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
   </head>
   <style>
-    section {
-      margin: 0% 20%;
-      height: 100%;
-      font-family: "Montserrat";
-    }
-
-    input[type="text"], .email {
-      display: inline-block;
-        margin-right: 15px;
-        width: 30%;
-    }
-    label {
-      font-size: 18px;
-    }
-    textarea {
-      max-width: 100%;
-      width: 100%;
-      height: 100px;
-    }
-    form{
-        padding: 30px;
-        box-shadow: 2px 1px 10px 1px  rgba(0,0,0,0.6);
-    }
-    input{
-        height: 25px;
-        padding: 2px;
-        margin-bottom: 10px;
+    body{
+      overflow-x: hidden;
     }
     nav{
       position: relative;
@@ -75,42 +54,105 @@
           </ul>
         </nav>
     <section>
-    <h1>Feedback Form</h1>
-    <form action="">
-      <span> <img src="../Images/img-DS.png" alt="Downy logo" height="50px">
-      DOWNY SHOES</span> <hr>
-      <br>
-      <label for="fname"
-        >First Name
-        <input type="text" placeholder="Name" required />
-        <label for="lname"
-        >Last Name
-        <input type="text" placeholder="Name" required />
-      </label>
-      <br>
-      <label for="Email"
-        >Email <input class="email" type="email" name="" id="" placeholder="Email" required
-      /></label>
-      <br>
-      <label for="UserFriendly"
-        >User Friendliness of the website = <span id="range-num"></span> <span>%</span><br>
-        <input type="range" name="" id="myRange" min="0" max="100" step="1" value="8" />
-      </label>
-      <br>
-      <label for="q1">Did you find what you were looking for in the website? <span style="font-weight:initial"><input type="radio" name="q1" id="" value="yes"> Yes
-      <input type="radio" name="q1" id="">No</span></label>
-      <br>
-      <label for="suggestion"
-        >Your suggestion <br><textarea
-          name="suggestion"
-          id=""
-            placeholder="Suggestions"
-        ></textarea
-      ></label>
-      <button type="submit" id="submit">Submit</button>
-      <button type="reset">Reset</button>
-    </form>
-  </section>
+            <div class="container" style="margin: 20px 30% 0 30% ">
+              <h2>Please fill this form </h2>
+             <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+               <form method="post">
+                <div class="form-group ">
+                 <label class="control-label " for="name">
+                  Name
+                 </label>
+                 <input class="form-control" id="name" name="name" type="text"/>
+                </div>
+                <div class="form-group ">
+                 <label class="control-label requiredField">
+                  Gender
+                  <span class="asteriskField">
+                   *
+                  </span>
+                 </label>
+                 <div class="">
+                  <div class="radio">
+                   <label class="radio">
+                    <input name="radio" type="radio" value="Male"/>
+                    Male
+                   </label>
+                  </div>
+                  <div class="radio">
+                   <label class="radio">
+                    <input name="radio" type="radio" value="Female"/>
+                    Female
+                   </label>
+                  </div>
+                  <div class="radio">
+                   <label class="radio">
+                    <input name="radio" type="radio" value="Unspecified"/>
+                    Unspecified
+                   </label>
+                  </div>
+                 </div>
+                </div>
+                <div class="form-group ">
+                 <label class="control-label " for="select">
+                  Your city
+                 </label>
+                 <select class="select form-control" id="select" name="select">
+                  <option value="Nairobi">
+                   Nairobi
+                  </option>
+                  <option value="Mombasa">
+                   Mombasa
+                  </option>
+                  <option value="Nakuru">
+                   Nakuru
+                  </option>
+                  <option value="Kisumu">
+                   Kisumu
+                  </option>
+                 </select>
+                </div>
+                <div class="form-group ">
+                 <label class="control-label " for="number">
+                  Your Age
+                 </label>
+                 <input class="form-control" id="number" name="number" placeholder="Age" type="text"/>
+                </div>
+                <div class="form-group ">
+                 <label class="control-label requiredField" for="email">
+                  Email
+                  <span class="asteriskField">
+                   *
+                  </span>
+                 </label>
+                 <input class="form-control" id="email" name="email" type="text"/>
+                </div>
+                <div class="form-group ">
+                 <label class="control-label " for="tel">
+                  Telephone
+                 </label>
+                 <input class="form-control" id="tel" name="tel" placeholder="Phone number" type="text"/>
+                </div>
+                <div class="form-group ">
+                 <label class="control-label " for="message">
+                  Message
+                 </label>
+                 <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                 <div>
+                  <button class="btn btn-primary " name="submit" type="submit">
+                   Submit
+                  </button>
+                  <button class="btn btn-secondary" type="reset">Reset</button>
+                 </div>
+                </div>
+               </form>
+              </div>
+             </div>
+            </div>
+
+  
     <script>
       //Script for displaying slider value
       var slider = document.getElementById("myRange");
